@@ -1,0 +1,39 @@
+{
+  "Groups": [
+    {
+      "Name": "Main",
+      "DisplayName": "Compatibilidade",
+      "Elements": [
+        {
+          "Name": "IncludeDir1",
+          "DisplayName": "Compatibilidade com Foreign Input",
+          "Description": [
+            "Ative se você usa o Foreign Input System (Recompiled) 3.6.4.1. Traduz habilidades, falas sobre as fitas de treinamento e textos extras da galeria.",
+            "Mantenha Unleashed PTBR acima do Foreign Input e do UnleasHD no HMM."
+          ],
+          "Type": "ForeignInputCompatibility",
+          "DefaultValue": "./Compatibility/Original/"
+        }
+      ]
+    }
+  ],
+  "Enums": {
+    "ForeignInputCompatibility": [
+      {
+        "DisplayName": "Desativada",
+        "Value": "./Compatibility/Original/",
+        "Description": [
+          "Usa os textos normais do Unleashed PTBR."
+        ]
+      },
+      {
+        "DisplayName": "Ativada",
+        "Value": "./Compatibility/ForeignInput/",
+        "Description": [
+          "Usa os textos do Foreign Input traduzidos para português brasileiro."
+        ]
+      }
+    ]
+  },
+  "IniFile": "mod.ini"
+}

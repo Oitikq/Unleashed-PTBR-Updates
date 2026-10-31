@@ -1,0 +1,20 @@
+# Unleashed PTBR — compatibilidade com Foreign Input
+
+Preparado para a versão instalada do Foreign Input System (Recompiled) **3.6.4.1**.
+
+O pacote completo está em `outputs/Unleashed PTBR`. Inclui os textos atuais da tradução e uma opção na engrenagem do HMM: **Compatibilidade com Foreign Input → Ativada / Desativada**. A opção começa desativada. Use o jogo em English e mantenha Unleashed PTBR acima de Foreign Input e UnleasHD.
+
+Foram mantidos os nomes de habilidades já traduzidos e adicionadas traduções para os golpes novos, sete falas sobre fitas de treinamento, títulos das fitas, estilos e entradas extras da galeria. Nomes próprios de outros mods, títulos de músicas e créditos foram preservados. O áudio e o conteúdo interno dos vídeos SFD não foram traduzidos. As texturas DDS das fitas não foram editadas.
+
+`INSTALAR.ps1` atualiza a instalação informada pelo usuário, verifica os arquivos de origem, faz backup dos arquivos envolvidos e mantém a opção desativada. Feche o jogo e o HMM antes de executar. A instalação reorganiza 26 arquivos de recursos em `Compatibility/Original`, mantendo o conteúdo original intacto. O HMM alterna entre esse conjunto e `Compatibility/ForeignInput`, sem sobreposição entre os dois.
+
+Validação realizada: extração e reempacotamento dos 13 arquivos, preservação dos recursos não editados, conferência dos IDs de glifos nas 1.310 células novas/editadas e prévia com as fontes reais. O estado desativado foi comparado por SHA-256 com todos os 139 arquivos de dados da tradução instalada. **Ainda precisa de teste dentro do jogo e da interface do HMM.**
+
+`outputs/textos_traduzidos.json` contém os textos para revisão. `outputs/verificacao.json` contém o relatório dos arquivos. `outputs/previa_textos.png` mostra exemplos renderizados com a fonte do jogo.
+
+As ferramentas FCO e HedgeArcPack foram reaproveitadas do projeto anterior. `tools/translations.py` contém as traduções novas; `tools/build.py` documenta e reproduz a montagem a partir dos caminhos locais usados nesta sessão.
+
+
+## Correção 1.1.1
+
+Os textos traduzidos também são fornecidos nos 13 arquivos da camada comum, pois o Foreign Input inclui cópias fora de Languages/English. O arquivo comum original de EvilActionCommon foi preservado no conjunto Original e seus recursos visuais foram mantidos no conjunto ForeignInput. A fala da cerca e os nomes de habilidades das imagens foram conferidos nessa camada. Para reproduzir esta versão, execute tools/build.py e depois tools/fix_common_layer.py.

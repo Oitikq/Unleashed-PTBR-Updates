@@ -1,0 +1,23 @@
+UNLEASHED PTBR — VERSÃO 1.0
+Autor: Oitikq
+
+CONTEÚDO
+Tradução e adaptação para português brasileiro de diálogos, legendas das cenas, dicas, menus, missões, itens, lojas, enciclopédia, galeria e interface. Inclui as fontes e os acentos usados na tradução. A integração incluída traduz as configurações e conquistas quando o mod está ativo.
+
+INSTALAÇÃO
+1. Feche o jogo e o Hedge Mod Manager.
+2. Extraia a pasta Unleashed PTBR para a pasta mods do jogo.
+3. Abra o Hedge Mod Manager e ative Unleashed PTBR. Se não aparecer, adicione o mod pelo gerenciador, selecionando o arquivo mod.ini dessa pasta.
+4. Mantenha Unleashed PTBR acima de UnleasHD 1.4.2 na lista de prioridade.
+5. Para traduzir também as configurações e conquistas, abra a pasta Integracao_Nativa, clique com o botão direito em Aplicar_integracao.ps1 e escolha Executar com o PowerShell. Selecione a pasta que contém Sonic unleashed.exe. Se já usava uma integração anterior, aplique o script novamente.
+6. No jogo, use o idioma English (Inglês) e ative as legendas.
+
+
+REQUISITOS
+- Unleashed Recompiled para Windows, com os arquivos de Sonic Unleashed instalados.
+- Hedge Mod Manager compatível com Unleashed Recompiled.
+- UnleasHD 1.4.2 instalado e ativo abaixo da tradução. Ele é um download separado.
+- Para a integração de configurações e conquistas, uma versão do executável reconhecida pelo script incluído. O script informa quando a versão não é compatível.
+- Mínimo do jogo: 8 GB de RAM. Recomendação para jogar com UnleasHD e a tradução: 16 GB de RAM no total do computador.
+
+A tradução do launcher é um pacote separado: Unleashed PTBR - Launcher. 
